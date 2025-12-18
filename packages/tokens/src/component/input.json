@@ -1,0 +1,40 @@
+{
+  "input": {
+    "padding": {
+      "x": { "$value": "{spacing.4}", "$type": "dimension" },
+      "y": { "$value": "{spacing.3}", "$type": "dimension" }
+    },
+    "minHeight": { "$value": "{size.touch-target}", "$type": "dimension" },
+    "borderRadius": { "$value": "{radius.none}", "$type": "dimension" },
+    "borderWidth": { "$value": "{border.width.thin}", "$type": "dimension" },
+    "fontSize": { "$value": "{font.size.base}", "$type": "dimension" },
+    "transition": { "$value": "{transition.duration.slow}", "$type": "duration" },
+    "background": { "$value": "{color.background}", "$type": "color" },
+    "color": { "$value": "{color.text.primary}", "$type": "color" },
+    "borderColor": { "$value": "{color.border.default}", "$type": "color" },
+    "placeholder": {
+      "color": { "$value": "{color.text.muted}", "$type": "color" }
+    },
+    "focus": {
+      "borderColor": { "$value": "{color.glow}", "$type": "color" },
+      "shadow": { "$value": "{shadow.glow.sm}", "$type": "shadow" }
+    },
+    "invalid": {
+      "borderColor": { "$value": "{color.state.danger}", "$type": "color" },
+      "shadow": { "$value": "0 0 5px rgba(255, 0, 0, 0.5)", "$type": "shadow" }
+    },
+    "disabled": {
+      "opacity": { "$value": "{opacity.disabled}", "$type": "number" }
+    },
+    "label": {
+      "fontSize": { "$value": "{font.size.xs}", "$type": "dimension" },
+      "marginBottom": { "$value": "{spacing.2}", "$type": "dimension" },
+      "letterSpacing": { "$value": "{font.letterSpacing.wide}", "$type": "dimension" }
+    },
+    "helpText": {
+      "fontSize": { "$value": "{font.size.xs}", "$type": "dimension" },
+      "marginTop": { "$value": "{spacing.1}", "$type": "dimension" },
+      "color": { "$value": "{color.text.muted}", "$type": "color" }
+    }
+  }
+}

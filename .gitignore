@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Storybook
+storybook-static/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+playwright-report/
+test-results/
+
+# Turbo
+.turbo/
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Misc
+*.bak
+*.tmp
+*.temp

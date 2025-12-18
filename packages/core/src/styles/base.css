@@ -1,0 +1,158 @@
+/**
+ * Sendell-Trix Base Styles
+ * Global styles and CSS reset for Matrix aesthetic
+ */
+
+/* Import design tokens */
+@import '@sendell-trix/tokens/css/variables.css';
+
+/* CSS Reset for Matrix aesthetic */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base styles */
+:root {
+  /* Font imports */
+  font-family: var(--st-font-family-mono, 'Fira Code', 'Source Code Pro', monospace);
+  font-size: var(--st-font-size-base, 16px);
+  line-height: var(--st-font-line-height-normal, 1.5);
+
+  /* Colors */
+  color-scheme: dark;
+  background-color: var(--st-color-background, #000000);
+  color: var(--st-color-text-primary, #00ff41);
+
+  /* Text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--st-color-background, #000000);
+  color: var(--st-color-text-primary, #00ff41);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--st-font-family-display, 'Share Tech Mono', monospace);
+  font-weight: var(--st-font-weight-bold, 700);
+  line-height: var(--st-font-line-height-tight, 1.25);
+  letter-spacing: var(--st-font-letter-spacing-wide, 0.025em);
+  margin: 0 0 1rem;
+}
+
+h1 { font-size: var(--st-font-size-4xl, 2.25rem); }
+h2 { font-size: var(--st-font-size-3xl, 1.875rem); }
+h3 { font-size: var(--st-font-size-2xl, 1.5rem); }
+h4 { font-size: var(--st-font-size-xl, 1.25rem); }
+h5 { font-size: var(--st-font-size-lg, 1.125rem); }
+h6 { font-size: var(--st-font-size-base, 1rem); }
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--st-color-primary, #00ff41);
+  text-decoration: none;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+a:hover {
+  text-shadow: 0 0 10px var(--st-color-glow, #00ff41);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--st-color-glow, #00ff41);
+  outline-offset: 2px;
+}
+
+/* Code blocks */
+code, pre {
+  font-family: var(--st-font-family-mono, 'Fira Code', monospace);
+  font-size: var(--st-font-size-sm, 0.875rem);
+}
+
+pre {
+  padding: var(--st-spacing-4, 1rem);
+  background: var(--st-color-surface, #0d0d0d);
+  border: 1px solid var(--st-color-border-muted, #006600);
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  background: var(--st-color-surface, #0d0d0d);
+  border: 1px solid var(--st-color-border-muted, #006600);
+}
+
+/* Selection */
+::selection {
+  background: var(--st-color-primary, #00ff41);
+  color: var(--st-color-background, #000000);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--st-color-background, #000000);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--st-color-border-muted, #006600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--st-color-primary, #00ff41);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--st-color-glow, #00ff41);
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.st-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.st-uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--st-font-letter-spacing-matrix, 0.15em);
+}
+
+.st-mono {
+  font-family: var(--st-font-family-mono, 'Fira Code', monospace);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

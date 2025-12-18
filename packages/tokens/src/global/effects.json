@@ -1,0 +1,53 @@
+{
+  "shadow": {
+    "none": { "$value": "none", "$type": "shadow" },
+    "sm": { "$value": "0 1px 2px 0 rgba(0, 0, 0, 0.5)", "$type": "shadow" },
+    "md": { "$value": "0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.5)", "$type": "shadow" },
+    "lg": { "$value": "0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5)", "$type": "shadow" },
+    "xl": { "$value": "0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5)", "$type": "shadow" },
+    "glow": {
+      "sm": { "$value": "0 0 5px rgba(0, 255, 65, 0.5)", "$type": "shadow", "$description": "Small matrix glow" },
+      "md": { "$value": "0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.3)", "$type": "shadow", "$description": "Medium matrix glow" },
+      "lg": { "$value": "0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.4), 0 0 40px rgba(0, 255, 65, 0.3)", "$type": "shadow", "$description": "Large matrix glow" },
+      "xl": { "$value": "0 0 10px rgba(0, 255, 65, 0.6), 0 0 20px rgba(0, 255, 65, 0.5), 0 0 40px rgba(0, 255, 65, 0.4), 0 0 80px rgba(0, 255, 65, 0.2)", "$type": "shadow", "$description": "Extra large matrix glow" }
+    },
+    "inner": {
+      "glow": { "$value": "inset 0 0 10px rgba(0, 255, 65, 0.2)", "$type": "shadow", "$description": "Inner glow for inputs" }
+    }
+  },
+  "transition": {
+    "duration": {
+      "instant": { "$value": "0ms", "$type": "duration" },
+      "fast": { "$value": "100ms", "$type": "duration" },
+      "normal": { "$value": "200ms", "$type": "duration" },
+      "slow": { "$value": "300ms", "$type": "duration" },
+      "slower": { "$value": "500ms", "$type": "duration" }
+    },
+    "timing": {
+      "linear": { "$value": "linear", "$type": "cubicBezier" },
+      "ease": { "$value": "ease", "$type": "cubicBezier" },
+      "ease-in": { "$value": "ease-in", "$type": "cubicBezier" },
+      "ease-out": { "$value": "ease-out", "$type": "cubicBezier" },
+      "ease-in-out": { "$value": "ease-in-out", "$type": "cubicBezier" }
+    }
+  },
+  "opacity": {
+    "0": { "$value": "0", "$type": "number" },
+    "25": { "$value": "0.25", "$type": "number" },
+    "50": { "$value": "0.5", "$type": "number" },
+    "75": { "$value": "0.75", "$type": "number" },
+    "100": { "$value": "1", "$type": "number" },
+    "disabled": { "$value": "0.5", "$type": "number", "$description": "Opacity for disabled states" },
+    "muted": { "$value": "0.7", "$type": "number", "$description": "Opacity for muted text" }
+  },
+  "zIndex": {
+    "base": { "$value": "0", "$type": "number" },
+    "dropdown": { "$value": "1000", "$type": "number" },
+    "sticky": { "$value": "1020", "$type": "number" },
+    "fixed": { "$value": "1030", "$type": "number" },
+    "modal-backdrop": { "$value": "1040", "$type": "number" },
+    "modal": { "$value": "1050", "$type": "number" },
+    "popover": { "$value": "1060", "$type": "number" },
+    "tooltip": { "$value": "1070", "$type": "number" }
+  }
+}

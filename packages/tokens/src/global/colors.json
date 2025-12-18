@@ -1,0 +1,47 @@
+{
+  "color": {
+    "matrix": {
+      "50": { "$value": "#001a00", "$type": "color", "$description": "Darkest matrix green" },
+      "100": { "$value": "#003300", "$type": "color" },
+      "200": { "$value": "#004d00", "$type": "color" },
+      "300": { "$value": "#006600", "$type": "color" },
+      "400": { "$value": "#008f11", "$type": "color" },
+      "500": { "$value": "#00ff41", "$type": "color", "$description": "Matrix primary green - iconic color" },
+      "600": { "$value": "#33ff66", "$type": "color" },
+      "700": { "$value": "#66ff8c", "$type": "color" },
+      "800": { "$value": "#99ffaa", "$type": "color" },
+      "900": { "$value": "#ccffdd", "$type": "color", "$description": "Lightest matrix green" }
+    },
+    "black": {
+      "pure": { "$value": "#000000", "$type": "color", "$description": "Pure black - main background" },
+      "soft": { "$value": "#0d0d0d", "$type": "color", "$description": "Soft black for surfaces" },
+      "surface": { "$value": "#1a1a1a", "$type": "color", "$description": "Elevated surface color" },
+      "border": { "$value": "#2a2a2a", "$type": "color", "$description": "Subtle border color" }
+    },
+    "white": {
+      "pure": { "$value": "#ffffff", "$type": "color" },
+      "soft": { "$value": "#f0f0f0", "$type": "color" },
+      "muted": { "$value": "#a0a0a0", "$type": "color" }
+    },
+    "danger": {
+      "300": { "$value": "#ff4d4d", "$type": "color" },
+      "500": { "$value": "#ff0000", "$type": "color", "$description": "Red pill / danger state" },
+      "700": { "$value": "#cc0000", "$type": "color" }
+    },
+    "warning": {
+      "300": { "$value": "#ffff4d", "$type": "color" },
+      "500": { "$value": "#ffff00", "$type": "color", "$description": "Warning / attention state" },
+      "700": { "$value": "#cccc00", "$type": "color" }
+    },
+    "info": {
+      "300": { "$value": "#4dd4ff", "$type": "color" },
+      "500": { "$value": "#00bfff", "$type": "color", "$description": "Info state - cyan" },
+      "700": { "$value": "#0099cc", "$type": "color" }
+    },
+    "success": {
+      "300": { "$value": "#66ff8c", "$type": "color" },
+      "500": { "$value": "#00ff41", "$type": "color", "$description": "Success state - same as primary" },
+      "700": { "$value": "#00cc34", "$type": "color" }
+    }
+  }
+}

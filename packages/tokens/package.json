@@ -1,0 +1,39 @@
+{
+  "name": "@sendell-trix/tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for sendell-trix design system",
+  "keywords": ["design-tokens", "matrix", "css-variables", "style-dictionary"],
+  "license": "MIT",
+  "author": "Sendell Trix Team",
+  "type": "module",
+  "main": "./dist/js/tokens.js",
+  "module": "./dist/js/tokens.js",
+  "types": "./dist/ts/tokens.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/ts/tokens.d.ts",
+      "import": "./dist/js/tokens.js"
+    },
+    "./css": "./dist/css/variables.css",
+    "./css/variables.css": "./dist/css/variables.css",
+    "./css/themes/*.css": "./dist/css/themes/*.css",
+    "./js": {
+      "types": "./dist/ts/tokens.d.ts",
+      "import": "./dist/js/tokens.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node sd.config.mjs",
+    "clean": "rm -rf dist",
+    "watch": "node sd.config.mjs --watch"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

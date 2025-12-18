@@ -1,0 +1,40 @@
+{
+  "font": {
+    "family": {
+      "mono": { "$value": "'Fira Code', 'Source Code Pro', 'Consolas', monospace", "$type": "fontFamily", "$description": "Primary monospace font for code aesthetic" },
+      "display": { "$value": "'Share Tech Mono', 'Fira Code', monospace", "$type": "fontFamily", "$description": "Display font for headings" },
+      "system": { "$value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", "$type": "fontFamily", "$description": "Fallback system font" }
+    },
+    "size": {
+      "xs": { "$value": "0.75rem", "$type": "dimension", "$description": "12px" },
+      "sm": { "$value": "0.875rem", "$type": "dimension", "$description": "14px" },
+      "base": { "$value": "1rem", "$type": "dimension", "$description": "16px - base size" },
+      "lg": { "$value": "1.125rem", "$type": "dimension", "$description": "18px" },
+      "xl": { "$value": "1.25rem", "$type": "dimension", "$description": "20px" },
+      "2xl": { "$value": "1.5rem", "$type": "dimension", "$description": "24px" },
+      "3xl": { "$value": "1.875rem", "$type": "dimension", "$description": "30px" },
+      "4xl": { "$value": "2.25rem", "$type": "dimension", "$description": "36px" },
+      "5xl": { "$value": "3rem", "$type": "dimension", "$description": "48px" }
+    },
+    "weight": {
+      "normal": { "$value": "400", "$type": "fontWeight" },
+      "medium": { "$value": "500", "$type": "fontWeight" },
+      "semibold": { "$value": "600", "$type": "fontWeight" },
+      "bold": { "$value": "700", "$type": "fontWeight" }
+    },
+    "lineHeight": {
+      "tight": { "$value": "1.25", "$type": "number" },
+      "normal": { "$value": "1.5", "$type": "number" },
+      "relaxed": { "$value": "1.75", "$type": "number" },
+      "loose": { "$value": "2", "$type": "number" }
+    },
+    "letterSpacing": {
+      "tight": { "$value": "-0.025em", "$type": "dimension" },
+      "normal": { "$value": "0", "$type": "dimension" },
+      "wide": { "$value": "0.025em", "$type": "dimension" },
+      "wider": { "$value": "0.05em", "$type": "dimension" },
+      "widest": { "$value": "0.1em", "$type": "dimension" },
+      "matrix": { "$value": "0.15em", "$type": "dimension", "$description": "Extra wide for Matrix aesthetic" }
+    }
+  }
+}

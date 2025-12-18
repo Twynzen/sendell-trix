@@ -1,0 +1,21 @@
+{
+  "extends": "./tools/tsconfig/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@sendell-trix/tokens": ["packages/tokens/src"],
+      "@sendell-trix/tokens/*": ["packages/tokens/src/*"],
+      "sendell-trix": ["packages/core/src"],
+      "sendell-trix/*": ["packages/core/src/*"],
+      "@sendell-trix/react": ["packages/react/src"],
+      "@sendell-trix/react/*": ["packages/react/src/*"]
+    }
+  },
+  "references": [
+    { "path": "packages/tokens" },
+    { "path": "packages/core" },
+    { "path": "packages/react" }
+  ],
+  "include": [],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,102 @@
+# sendell-trix Design System
+
+Welcome to **sendell-trix** - a Matrix-inspired Web Components design system built with Lit 3.x.
+
+## Overview
+
+sendell-trix provides a collection of beautifully crafted web components with a cyberpunk aesthetic inspired by The Matrix. All components are:
+
+- 🎨 **Framework-agnostic** - Works with React, Vue, Angular, or vanilla JS
+- ⚡ **Performant** - Built with Lit 3.x for optimal performance
+- ♿ **Accessible** - WCAG 2.1 compliant with proper ARIA support
+- 🎬 **Motion-safe** - Respects `prefers-reduced-motion`
+- 📦 **Tree-shakeable** - Import only what you need
+
+## Installation
+
+```bash
+npm install sendell-trix
+```
+
+## Quick Start
+
+### Vanilla JavaScript
+
+```html
+<script type="module">
+  import 'sendell-trix';
+</script>
+
+<st-button>Enter the Matrix</st-button>
+<st-input label="Username" placeholder="neo"></st-input>
+```
+
+### React
+
+```jsx
+import { Button, Input } from '@sendell-trix/react';
+
+function App() {
+  return (
+    <div>
+      <Button onClick={() => console.log('clicked')}>
+        Enter the Matrix
+      </Button>
+      <Input label="Username" placeholder="neo" />
+    </div>
+  );
+}
+```
+
+## Component Categories
+
+### Core Components
+- **Button** - Matrix-styled buttons with glow effects
+- **Input** - Text inputs with neon focus states
+- **Card** - Content containers with border glow
+- **Badge** - Status indicators and labels
+- **Spinner** - Loading indicators
+- **Modal** - Dialog windows
+- **Tooltip** - Contextual help
+
+### Effect Components
+- **Matrix Rain** - The iconic falling code effect
+- **Glitch Text** - Cyberpunk text distortion
+- **Terminal Window** - Retro terminal UI
+
+## Design Tokens
+
+The design system uses a comprehensive token system:
+
+```css
+/* Primary colors */
+--st-color-primary: #00ff41;
+--st-color-background: #000000;
+--st-color-surface: #0d0d0d;
+
+/* Typography */
+--st-font-family-mono: 'Fira Code', monospace;
+
+/* Effects */
+--st-shadow-glow-md: 0 0 10px rgba(0, 255, 65, 0.5);
+```
+
+## Accessibility
+
+All components include:
+- Proper ARIA attributes
+- Keyboard navigation
+- Focus management
+- Screen reader support
+- Reduced motion alternatives
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 90+
+- Safari 14+
+- Edge 90+
+
+---
+
+Choose the red pill and explore the components →

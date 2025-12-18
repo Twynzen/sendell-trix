@@ -1,0 +1,31 @@
+{
+  "terminal": {
+    "background": { "$value": "{color.surface}", "$type": "color" },
+    "borderColor": { "$value": "{color.primary}", "$type": "color" },
+    "borderWidth": { "$value": "{border.width.thin}", "$type": "dimension" },
+    "borderRadius": { "$value": "{radius.lg}", "$type": "dimension" },
+    "shadow": { "$value": "{shadow.glow.md}", "$type": "shadow" },
+    "header": {
+      "background": { "$value": "rgba(0, 255, 65, 0.1)", "$type": "color" },
+      "padding": { "$value": "{spacing.3} {spacing.4}", "$type": "dimension" },
+      "borderColor": { "$value": "{color.primary}", "$type": "color" }
+    },
+    "content": {
+      "padding": { "$value": "{spacing.4}", "$type": "dimension" },
+      "minHeight": { "$value": "200px", "$type": "dimension" },
+      "fontSize": { "$value": "{font.size.sm}", "$type": "dimension" },
+      "lineHeight": { "$value": "{font.lineHeight.relaxed}", "$type": "number" }
+    },
+    "button": {
+      "size": { "$value": "12px", "$type": "dimension" },
+      "gap": { "$value": "{spacing.2}", "$type": "dimension" },
+      "close": { "$value": "#ff5f56", "$type": "color" },
+      "minimize": { "$value": "#ffbd2e", "$type": "color" },
+      "maximize": { "$value": "#27ca40", "$type": "color" }
+    },
+    "title": {
+      "fontSize": { "$value": "{font.size.xs}", "$type": "dimension" },
+      "opacity": { "$value": "{opacity.muted}", "$type": "number" }
+    }
+  }
+}

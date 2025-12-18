@@ -1,0 +1,118 @@
+{
+  "name": "sendell-trix",
+  "version": "1.0.0",
+  "description": "Matrix-inspired Web Components design system built with Lit 3.x",
+  "keywords": [
+    "web-components",
+    "design-system",
+    "lit",
+    "matrix",
+    "cyberpunk",
+    "ui",
+    "components",
+    "custom-elements"
+  ],
+  "homepage": "https://github.com/sendell-trix/sendell-trix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendell-trix/sendell-trix.git"
+  },
+  "license": "MIT",
+  "author": "Sendell Trix Team",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./button": {
+      "types": "./dist/components/button/st-button.d.ts",
+      "import": "./dist/components/button/st-button.js"
+    },
+    "./input": {
+      "types": "./dist/components/input/st-input.d.ts",
+      "import": "./dist/components/input/st-input.js"
+    },
+    "./terminal-window": {
+      "types": "./dist/components/terminal-window/st-terminal-window.d.ts",
+      "import": "./dist/components/terminal-window/st-terminal-window.js"
+    },
+    "./matrix-rain": {
+      "types": "./dist/components/matrix-rain/st-matrix-rain.d.ts",
+      "import": "./dist/components/matrix-rain/st-matrix-rain.js"
+    },
+    "./glitch-text": {
+      "types": "./dist/components/glitch-text/st-glitch-text.d.ts",
+      "import": "./dist/components/glitch-text/st-glitch-text.js"
+    },
+    "./card": {
+      "types": "./dist/components/card/st-card.d.ts",
+      "import": "./dist/components/card/st-card.js"
+    },
+    "./badge": {
+      "types": "./dist/components/badge/st-badge.d.ts",
+      "import": "./dist/components/badge/st-badge.js"
+    },
+    "./spinner": {
+      "types": "./dist/components/spinner/st-spinner.d.ts",
+      "import": "./dist/components/spinner/st-spinner.js"
+    },
+    "./modal": {
+      "types": "./dist/components/modal/st-modal.d.ts",
+      "import": "./dist/components/modal/st-modal.js"
+    },
+    "./tooltip": {
+      "types": "./dist/components/tooltip/st-tooltip.d.ts",
+      "import": "./dist/components/tooltip/st-tooltip.js"
+    },
+    "./styles/*.css": "./dist/styles/*.css",
+    "./themes/*.css": "./dist/themes/*.css",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "./dist/define.js"
+  ],
+  "files": [
+    "dist",
+    "custom-elements.json"
+  ],
+  "scripts": {
+    "build": "tsc && npm run build:analyze",
+    "build:analyze": "cem analyze --litelement",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist coverage",
+    "dev": "tsc --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
+    "test": "wtr",
+    "test:watch": "wtr --watch"
+  },
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.9.0",
+    "@open-wc/testing": "^4.0.0",
+    "@sendell-trix/tokens": "workspace:*",
+    "@types/mocha": "^10.0.6",
+    "@web/test-runner": "^0.18.0",
+    "@web/test-runner-playwright": "^0.11.0",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "lit": "^3.0.0"
+  },
+  "customElements": "custom-elements.json",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

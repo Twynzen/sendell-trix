@@ -1,0 +1,45 @@
+{
+  "button": {
+    "padding": {
+      "x": { "$value": "{spacing.6}", "$type": "dimension" },
+      "y": { "$value": "{spacing.3}", "$type": "dimension" }
+    },
+    "minHeight": { "$value": "{size.touch-target}", "$type": "dimension" },
+    "minWidth": { "$value": "{size.touch-target}", "$type": "dimension" },
+    "borderRadius": { "$value": "{radius.none}", "$type": "dimension" },
+    "borderWidth": { "$value": "{border.width.medium}", "$type": "dimension" },
+    "fontSize": { "$value": "{font.size.sm}", "$type": "dimension" },
+    "fontWeight": { "$value": "{font.weight.medium}", "$type": "fontWeight" },
+    "letterSpacing": { "$value": "{font.letterSpacing.matrix}", "$type": "dimension" },
+    "transition": { "$value": "{transition.duration.slow}", "$type": "duration" },
+    "outline": {
+      "background": { "$value": "transparent", "$type": "color" },
+      "color": { "$value": "{color.primary}", "$type": "color" },
+      "borderColor": { "$value": "{color.primary}", "$type": "color" },
+      "hover": {
+        "background": { "$value": "{color.primary}", "$type": "color" },
+        "color": { "$value": "{color.text.inverse}", "$type": "color" }
+      }
+    },
+    "filled": {
+      "background": { "$value": "{color.primary}", "$type": "color" },
+      "color": { "$value": "{color.text.inverse}", "$type": "color" },
+      "borderColor": { "$value": "{color.primary}", "$type": "color" },
+      "hover": {
+        "background": { "$value": "{color.primary-hover}", "$type": "color" }
+      }
+    },
+    "danger": {
+      "background": { "$value": "transparent", "$type": "color" },
+      "color": { "$value": "{color.state.danger}", "$type": "color" },
+      "borderColor": { "$value": "{color.state.danger}", "$type": "color" },
+      "hover": {
+        "background": { "$value": "{color.state.danger}", "$type": "color" },
+        "color": { "$value": "{color.black.pure}", "$type": "color" }
+      }
+    },
+    "disabled": {
+      "opacity": { "$value": "{opacity.disabled}", "$type": "number" }
+    }
+  }
+}

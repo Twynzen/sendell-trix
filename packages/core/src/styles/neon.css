@@ -1,0 +1,126 @@
+/**
+ * Sendell-Trix Neon Effect Utilities
+ * Use these utility classes for neon glow effects
+ */
+
+/* Neon text glow - use sparingly on mobile (CPU intensive) */
+.st-neon-text {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px var(--st-color-glow, #00ff41),
+    0 0 82px var(--st-color-glow, #00ff41);
+}
+
+/* Simplified mobile version (max 3 shadows) */
+@media (max-width: 768px) {
+  .st-neon-text {
+    text-shadow:
+      0 0 7px #fff,
+      0 0 21px var(--st-color-glow, #00ff41),
+      0 0 42px var(--st-color-glow, #00ff41);
+  }
+}
+
+/* Light neon text (less intense) */
+.st-neon-text-light {
+  text-shadow:
+    0 0 5px var(--st-color-glow, #00ff41),
+    0 0 10px var(--st-color-glow, #00ff41);
+}
+
+/* Neon border glow */
+.st-neon-border {
+  border: 2px solid var(--st-color-primary, #00ff41);
+  box-shadow:
+    0 0 5px var(--st-color-glow, #00ff41),
+    0 0 10px var(--st-color-glow, #00ff41),
+    inset 0 0 5px rgba(0, 255, 65, 0.1);
+}
+
+/* Strong neon border */
+.st-neon-border-strong {
+  border: 2px solid var(--st-color-primary, #00ff41);
+  box-shadow:
+    0 0 10px var(--st-color-glow, #00ff41),
+    0 0 20px var(--st-color-glow, #00ff41),
+    0 0 40px var(--st-color-glow, #00ff41),
+    inset 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+/* Neon background glow */
+.st-neon-bg {
+  background: var(--st-color-primary, #00ff41);
+  box-shadow:
+    0 0 10px var(--st-color-glow, #00ff41),
+    0 0 20px var(--st-color-glow, #00ff41);
+}
+
+/* Animated flicker effect */
+@keyframes st-neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+
+.st-neon-flicker {
+  animation: st-neon-flicker 1.5s infinite alternate;
+}
+
+/* Animated pulse effect */
+@keyframes st-neon-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 5px var(--st-color-glow, #00ff41),
+      0 0 10px var(--st-color-glow, #00ff41);
+  }
+  50% {
+    box-shadow:
+      0 0 10px var(--st-color-glow, #00ff41),
+      0 0 20px var(--st-color-glow, #00ff41),
+      0 0 30px var(--st-color-glow, #00ff41);
+  }
+}
+
+.st-neon-pulse {
+  animation: st-neon-pulse 2s ease-in-out infinite;
+}
+
+/* Color variants */
+.st-neon-red {
+  --st-color-glow: #ff0000;
+  --st-color-primary: #ff0000;
+}
+
+.st-neon-blue {
+  --st-color-glow: #00bfff;
+  --st-color-primary: #00bfff;
+}
+
+.st-neon-yellow {
+  --st-color-glow: #ffff00;
+  --st-color-primary: #ffff00;
+}
+
+.st-neon-magenta {
+  --st-color-glow: #ff00ff;
+  --st-color-primary: #ff00ff;
+}
+
+.st-neon-cyan {
+  --st-color-glow: #00ffff;
+  --st-color-primary: #00ffff;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .st-neon-flicker,
+  .st-neon-pulse {
+    animation: none;
+  }
+}

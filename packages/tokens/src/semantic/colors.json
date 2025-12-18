@@ -1,0 +1,34 @@
+{
+  "color": {
+    "primary": { "$value": "{color.matrix.500}", "$type": "color", "$description": "Primary brand color" },
+    "primary-hover": { "$value": "{color.matrix.600}", "$type": "color" },
+    "primary-active": { "$value": "{color.matrix.400}", "$type": "color" },
+    "secondary": { "$value": "{color.matrix.300}", "$type": "color", "$description": "Secondary accent color" },
+    "background": { "$value": "{color.black.pure}", "$type": "color", "$description": "Main background" },
+    "surface": { "$value": "{color.black.soft}", "$type": "color", "$description": "Card/surface background" },
+    "surface-elevated": { "$value": "{color.black.surface}", "$type": "color", "$description": "Elevated surface" },
+    "text": {
+      "primary": { "$value": "{color.matrix.500}", "$type": "color", "$description": "Primary text color" },
+      "secondary": { "$value": "{color.matrix.400}", "$type": "color", "$description": "Secondary text color" },
+      "muted": { "$value": "{color.matrix.300}", "$type": "color", "$description": "Muted/placeholder text" },
+      "disabled": { "$value": "{color.matrix.200}", "$type": "color", "$description": "Disabled text" },
+      "inverse": { "$value": "{color.black.pure}", "$type": "color", "$description": "Text on primary background" }
+    },
+    "border": {
+      "default": { "$value": "{color.matrix.500}", "$type": "color", "$description": "Default border" },
+      "muted": { "$value": "{color.matrix.300}", "$type": "color", "$description": "Subtle border" },
+      "focus": { "$value": "{color.matrix.500}", "$type": "color", "$description": "Focus ring color" }
+    },
+    "glow": { "$value": "{color.matrix.500}", "$type": "color", "$description": "Neon glow color" },
+    "state": {
+      "danger": { "$value": "{color.danger.500}", "$type": "color" },
+      "danger-muted": { "$value": "{color.danger.300}", "$type": "color" },
+      "warning": { "$value": "{color.warning.500}", "$type": "color" },
+      "warning-muted": { "$value": "{color.warning.300}", "$type": "color" },
+      "success": { "$value": "{color.success.500}", "$type": "color" },
+      "success-muted": { "$value": "{color.success.300}", "$type": "color" },
+      "info": { "$value": "{color.info.500}", "$type": "color" },
+      "info-muted": { "$value": "{color.info.300}", "$type": "color" }
+    }
+  }
+}
